@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:"Poppins",sans-serif;
+    background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+    line-height:1.5;
+}
+ .is-required:after{
+    content:'*';
+    color:red;
+    padding-left:3px;
+}
+a{
+    text-decoration:none;
+}
+.container{
+    padding:20px;
+    max-width:500px;
+    margin:50px auto;
+}
+
+#login-container{
+    /* padding:20px 30px; */
+    padding:20px;
+    max-width:500px;
+    margin:50px auto;
+    position:relative;
+}
+
+.form-wrap,.login-wrap{
+    background-color:white;
+    padding:15px 30px;
+    color:#333;
+    border-radius:5px;
+}
+.form-wrap h1,.login-wrap h1{
+    color:navy;
+    font-size:2.5rem;
+}
+.form-wrap h1,
+.form-wrap p,
+.login-wrap h1,
+.login-wrap p{
+    text-align:center;
+}
+
+.form-wrap .form-group,
+.login-wrap .form-group{
+    margin-top:15px;
+}
+
+.form-wrap .form-group input,
+.login-wrap .form-group input{
+    width:100%;
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #ddd;
+    font-family:inherit;
+    /* margin-bottom: 10px; */
+}
+
+.form-wrap .form-group label,
+.login-wrap .form-group label{
+    display:block;
+    color:#666;
+    /* margin-bottom:10px; */
+}
+
+.btn{
+    width: 100%;
+    display:block;
+    margin-top:20px;
+    padding:10px;
+    background-color: #2E8B57;
+    color:white;
+    border:1px solid #2E8B57;
+    cursor: pointer;
+    font-size:15px;
+    font-family:inherit;
+    transition:1s;
+}
+.btn:hover{
+    background-color:green;
+    transition:3s;
+}
+
+.form-wrap .bottom-text{
+    font-size:15px;
+    margin-top:20px;
+}
+footer{
+    margin-top:10px;
+    text-align:center;
+    color:#333;
+}
+footer a{
+    color:navy;
+}
+
+.close{
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 5rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.hidden{
+    display:none;
+}
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    background-color: white;
+    padding: 6rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
